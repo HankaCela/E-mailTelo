@@ -1,16 +1,21 @@
+const closingEl = document.querySelector(".email__closing");
 const goodbye = (name) => {
-    document.querySelector('.email__closing').textContent = `S pozdravem ${name}`;
-};
+    closingEl.textContent = `S pozdravem ${name}`;
+  };
+  
+const subjectEl = document.querySelector(".email__subject");
 
 const fillSubject = (subject) => {
-    document.querySelector('.email__subject').textContent = subject;
+  subjectEl.textContent = subject;
 };
 
+fillSubject("Nabídka práce: frontend vývojář*ka");
+
+const bodyEl = document.querySelector(".email__body");
+
 const fillBody = (body, name) => {
-    document.querySelector('.email__body').textContent = body;
+    bodyEl.textContent = body;
     goodbye(name);
 };
 
-// Volání funkcí
-fillSubject('Žádost o zaměstnání');
-fillBody('Reaguji na Vaši nabídku práce na pozici frontend vývojář.', 'Pavel Ovesný');
+    fillBody("Skvělá práce pro šikovné juniory! ...", "Michaela");
