@@ -11,6 +11,6 @@ const fillBody = (body, name) => {
     goodbye(name);
 };
 
-// Zavolání funkcí pro vyplnění e-mailu
+// Volání funkcí
 fillSubject('Žádost o zaměstnání');
 fillBody('Reaguji na Vaši nabídku práce na pozici frontend vývojář.', 'Pavel Ovesný');
